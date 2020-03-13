@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box"> 
+    <img src="./images/mohan.jpg" width="380px" height="300px" alt="mohan">
+    <span id="tooltip">bannaji</span>
+    <script>
+      var spantext = document.getElementById('tooltip');
+      window.onmousemove = function(e)
+      {
+        var x =e.clientX,
+            y = e.clientY;
+        spantext.style.top = (y+20)+'px';
+        spantext.style.left = (x+20)+'px';
+      }
+    </script>
+  </div>
+</body>
+</html>

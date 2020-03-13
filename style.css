@@ -1,0 +1,35 @@
+body
+{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: consolas;
+  background:url("./images/bg2.jpg");
+  background-size: cover;
+}
+.box
+{
+  position: relative;
+  box-shadow: 12px 10px 2px rgba(0, 0, 0, 0.1);
+}
+#tooltip
+{
+  position:fixed;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  color: cyan;
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 5px 20px;
+  background: none;
+}
+.box:hover #tooltip
+{
+  opacity: 1;
+  visibility: visible;
+}
